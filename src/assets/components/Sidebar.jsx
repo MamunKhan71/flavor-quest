@@ -4,7 +4,7 @@ import CurrentlyCooking from "./CurrentlyCooking";
 
 const Sidebar = ({ cookingList, setCookingList }) => {
     const [currentCook, setCurrentCook] = useState([])
-
+    let index = 0;
     const currentlyCook = cookId => {
         setCurrentCook([...currentCook, cookId])
         setCookingList(cookingList.filter(list => list.recipe_id != cookId.recipe_id))
@@ -34,8 +34,9 @@ const Sidebar = ({ cookingList, setCookingList }) => {
                                     {
                                         cookingList.map(list => (
                                             <>
+
                                                 <tr className="bg-[#28282808]">
-                                                    <th key={cookingList.recipe_id}>1</th>
+                                                    <th>{index = index + 1}</th>
                                                     <td>{list.recipe_name}</td>
                                                     <td>{list.preparing_time}</td>
                                                     <td>{list.calories}</td>

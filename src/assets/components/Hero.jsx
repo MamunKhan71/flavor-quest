@@ -1,7 +1,7 @@
 const HeroSection = () => {
     return (
         <div className="lexend text-white px-4 lg:px-0">
-            <div className="hero h-full lg:h-[600px] rounded-3xl bg-[url('header.jpeg')]">
+            <div className="hero h-full lg:h-[600px] rounded-3xl bg-[url('/header.jpeg')]">
                 <div className="hero-overlay bg-gradient-to-t opacity-60 from-[#150b2be6] to-[#150b2b00]  rounded-3xl"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="lg:px-52 py-8 lg:py-0">

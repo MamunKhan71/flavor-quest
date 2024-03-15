@@ -1,4 +1,5 @@
 const CurrentlyCooking = ({ currentCook }) => {
+    let index = 0;
     return (
         <div className="w-full">
             <div className="space-y-4 w-full px-12">
@@ -21,7 +22,7 @@ const CurrentlyCooking = ({ currentCook }) => {
                                 currentCook.map(cooking => (
                                     <>
                                         <tr className="bg-[#28282808]">
-                                            <th>1</th>
+                                            <th>{index = index + 1}</th>
                                             <td>{cooking.recipe_name}</td>
                                             <td>{cooking.preparing_time}</td>
                                             <td>{cooking.calories}</td>
