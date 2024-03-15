@@ -2,7 +2,7 @@ const CurrentlyCooking = ({ currentCook }) => {
     return (
         <div className="w-full">
             <div className="space-y-4 w-full px-12">
-                <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Currently cooking: {currentCook.length>0 && currentCook.length<10 ? <>0{currentCook.length}</> : <>{currentCook.length}</>}</h1>
+                <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Currently cooking: {currentCook.length > 0 && currentCook.length < 10 ? <>0{currentCook.length}</> : <>{currentCook.length}</>}</h1>
                 <hr className="w-full" />
             </div>
             <div>
@@ -29,16 +29,18 @@ const CurrentlyCooking = ({ currentCook }) => {
                                     </>
                                 ))
                             }
-                            <tr className="lexend font-base font-medium text-[#282828cc]">
-                                <th></th>
-                                <td></td>
-                                <td>Total Time = {
-                                    currentCook.reduce((acc, curr) => acc + parseInt(curr.preparing_time), 0)
-                                }<span> minutes</span></td>
-                                <td>Total Calories = {
-                                    currentCook.reduce((acc, curr) => acc + parseInt(curr.calories), 0)
-                                }<span> calories</span></td>
-                            </tr>
+                            {
+                                currentCook.length > 0 && <><tr className="lexend font-base font-medium text-[#282828cc]">
+                                    <th></th>
+                                    <td></td>
+                                    <td>Total Time = {
+                                        currentCook.reduce((acc, curr) => acc + parseInt(curr.preparing_time), 0)
+                                    }<span> minutes</span></td>
+                                    <td>Total Calories = {
+                                        currentCook.reduce((acc, curr) => acc + parseInt(curr.calories), 0)
+                                    }<span> calories</span></td>
+                                </tr></>
+                            }
                         </tbody>
                     </table>
                 </div>
