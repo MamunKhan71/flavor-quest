@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="lexend my-6 lg:my-12">
+        <div className="lexend my-4 lg:my-12">
             <div className="navbar bg-base-100 p-0 ">
                 <div className="navbar-start w-full">
                     <div className="dropdown">
