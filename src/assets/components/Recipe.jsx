@@ -1,4 +1,7 @@
-const Recipe = ({ recipe }) => {
+import { useState } from "react";
+
+const Recipe = ({ recipe, setCooking }) => {
+
     return (
             <div className="card bg-base-100 border border-[#28282833]">
                 <figure className="px-6 pt-6">
@@ -47,8 +50,8 @@ const Recipe = ({ recipe }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-start w-full">
-                        <button className="btn rounded-full px-6 bg-[#0be58a] text-lg lexend font-medium">Want to Cook</button>
+                    <div className="flex justify-start w-full mt-4">
+                        <button onClick={()=> setCooking(recipe)} className="btn rounded-full px-6 bg-[#0be58a] text-lg lexend font-medium">Want to Cook</button>
                     </div>
                 </div>
             </div>
