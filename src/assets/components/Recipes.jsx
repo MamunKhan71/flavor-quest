@@ -24,7 +24,7 @@ const Recipes = () => {
             .then(data => setRecipe(data))
     }, [])
     return (
-        <div className="mt-16 lg:mt-24 px-4">
+        <div className="mt-16 lg:mt-24 px-4 lg:px-0">
             <div className="lexend space-y-4 lg:space-y-6">
                 <h1 className="text-center text-2xl lg:text-4xl font-semibold text-[#150B2B]">Our Recipes</h1>
                 <p className="text-center lg:px-56 text-[#150b2b99] leading-7">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>

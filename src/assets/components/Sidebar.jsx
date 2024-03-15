@@ -11,7 +11,7 @@ const Sidebar = ({ cookingList, setCookingList }) => {
     }
     return (
         <div className="mb-8">
-            <div className="min-w-96 space-y-8 rounded-2xl border border-[#28282833] ">
+            <div className="w-full lg:min-w-[500px] space-y-8 rounded-2xl border border-[#28282833] ">
                 <div>
                     <div className="space-y-4 w-full mt-8 px-20">
                         <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Want to cook: {cookingList.length > 0 && cookingList.length < 10 ? <>0{cookingList.length}</> : <>{cookingList.length}</>}</h1>
@@ -35,7 +35,7 @@ const Sidebar = ({ cookingList, setCookingList }) => {
                                         cookingList.map(list => (
                                             <>
                                                 <tr className="bg-[#28282808]">
-                                                    <th>1</th>
+                                                    <th key={cookingList.recipe_id}>1</th>
                                                     <td>{list.recipe_name}</td>
                                                     <td>{list.preparing_time}</td>
                                                     <td>{list.calories}</td>
