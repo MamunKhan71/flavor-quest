@@ -10,7 +10,7 @@ const Sidebar = ({ cookingList, setCookingList }) => {
         setCookingList(cookingList.filter(list => list.recipe_id != cookId.recipe_id))
     }
     return (
-        <div>
+        <div className="mb-8">
             <div className="min-w-96 space-y-8 rounded-2xl border border-[#28282833] ">
                 <div>
                     <div className="space-y-4 w-full mt-8 px-20">
@@ -39,7 +39,8 @@ const Sidebar = ({ cookingList, setCookingList }) => {
                                                     <td>{list.recipe_name}</td>
                                                     <td>{list.preparing_time}</td>
                                                     <td>{list.calories}</td>
-                                                    <td><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] px-4 text-[#150B2B] lexend">Preparing</button></td>
+                                                    <td><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] text-[#150B2B] lexend lg:hidden">✓</button></td>
+                                                    <td><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] px-4 text-[#150B2B] lexend hidden lg:flex">Preparing</button></td>
                                                 </tr>
                                             </>
                                         ))
