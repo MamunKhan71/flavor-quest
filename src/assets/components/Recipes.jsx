@@ -2,14 +2,20 @@ import { useState } from "react";
 import Sidebar from "./Sidebar";
 import { useEffect } from "react";
 import Recipe from "./Recipe";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Recipes = () => {
     const [cookingList, setCookingList] = useState([]);
 
     const setCooking = cookingItem => {
-        setCookingList([...cookingList, cookingItem])
+
+        if (cookingList.includes(cookingItem)) {
+            toast("This item is already in your cooking list.");
+        } else {
+            setCookingList([...cookingList, cookingItem])
+        }
     }
-    
+
 
     const [recipes, setRecipe] = useState([]);
     useEffect(() => {
@@ -33,6 +39,7 @@ const Recipes = () => {
                     <Sidebar cookingList={cookingList} setCookingList={setCookingList}></Sidebar>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

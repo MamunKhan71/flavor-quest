@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CurrentlyCooking from "./CurrentlyCooking";
 
+
 const Sidebar = ({ cookingList, setCookingList }) => {
     const [currentCook, setCurrentCook] = useState([])
 
@@ -13,7 +14,7 @@ const Sidebar = ({ cookingList, setCookingList }) => {
             <div className="min-w-96 space-y-8 rounded-2xl border border-[#28282833] ">
                 <div>
                     <div className="space-y-4 w-full mt-8 px-20">
-                        <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Want to cook: {cookingList.length>0 && cookingList.length<10 ? <>0{cookingList.length}</> : <>{cookingList.length}</>}</h1>
+                        <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Want to cook: {cookingList.length > 0 && cookingList.length < 10 ? <>0{cookingList.length}</> : <>{cookingList.length}</>}</h1>
                         <hr className="w-full" />
                     </div>
                     <div>
@@ -38,18 +39,18 @@ const Sidebar = ({ cookingList, setCookingList }) => {
                                                     <td>{list.recipe_name}</td>
                                                     <td>{list.preparing_time}</td>
                                                     <td>{list.calories}</td>
-                                                    <td><button onClick={()=> currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] px-4 text-[#150B2B] lexend">Preparing</button></td>
+                                                    <td><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] px-4 text-[#150B2B] lexend">Preparing</button></td>
                                                 </tr>
                                             </>
                                         ))
                                     }
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
+                <CurrentlyCooking currentCook={currentCook}></CurrentlyCooking>
             </div>
-            <CurrentlyCooking currentCook={currentCook}></CurrentlyCooking>
-        </div>
         </div >
     );
 };

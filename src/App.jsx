@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <div className='container mx-auto'>
+        
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <Recipes></Recipes>
