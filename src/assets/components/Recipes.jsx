@@ -9,6 +9,7 @@ const Recipes = () => {
     const setCooking = cookingItem => {
         setCookingList([...cookingList, cookingItem])
     }
+    
 
     const [recipes, setRecipe] = useState([]);
     useEffect(() => {
@@ -29,7 +30,7 @@ const Recipes = () => {
                             }
                         </div>
                     </div>
-                    <Sidebar cookingList={cookingList}></Sidebar>
+                    <Sidebar cookingList={cookingList} setCookingList={setCookingList}></Sidebar>
                 </div>
             </div>
         </div>
