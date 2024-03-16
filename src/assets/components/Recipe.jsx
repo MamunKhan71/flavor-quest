@@ -4,10 +4,10 @@ const Recipe = ({ recipe, setCooking }) => {
 
     return (
             <div className="card bg-base-100 border border-[#28282833]">
-                <figure className="px-4 lg:px-6 pt-4 lg:pt-6">
-                    <img src={recipe.recipe_image} alt="Shoes" className="rounded-xl h-52 w-full object-cover" />
+                <figure className="px-4 pt-4">
+                    <img src={recipe.recipe_image} alt="Shoes" className="rounded-xl h-48 w-full object-cover" />
                 </figure>
-                <div className="card-body items-center text-left w-full px-6 pt-6">
+                <div className="card-body items-center text-left w-full px-4 pt-4">
                     <h2 className="text-xl font-semibold text-[#282828] text-left w-full lexend">{recipe.recipe_name}</h2>
                     <p className="fira text-[#878787]">{recipe.short_description}</p>
                     <hr className="w-full" />
@@ -50,7 +50,7 @@ const Recipe = ({ recipe, setCooking }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-start w-full mt-4">
+                    <div className="flex justify-center lg:justify-start w-full mt-4">
                         <button onClick={()=> setCooking(recipe)} className="btn rounded-full px-6 bg-[#0be58a] text-lg lexend font-medium">Want to Cook</button>
                     </div>
                 </div>

@@ -40,8 +40,8 @@ const Sidebar = ({ cookingList, setCookingList }) => {
                                                     <td>{list.recipe_name}</td>
                                                     <td>{list.preparing_time}</td>
                                                     <td>{list.calories}</td>
-                                                    <td><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] text-[#150B2B] lexend lg:hidden">✓</button></td>
-                                                    <td><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] px-4 text-[#150B2B] lexend hidden lg:flex">Preparing</button></td>
+                                                    <td className="lg:hidden"><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] text-[#150B2B] lexend lg:hidden">✓</button></td>
+                                                    <td className="hidden lg:flex"><button onClick={() => currentlyCook(list)} className="btn rounded-full bg-[#0BE58A] px-4 text-[#150B2B] lexend ">Preparing</button></td>
                                                 </tr>
                                             </>
                                         ))

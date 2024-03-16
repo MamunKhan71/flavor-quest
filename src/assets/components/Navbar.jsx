@@ -15,7 +15,6 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex gap-2 items-center">
-                    <img src="FqLogo.png" className="w-8 h-8"></img>
                     <a className="text-xl lg:text-3xl font-bold text-[#150B2B] w-full">Flavor<span className="text-white bg-[#00A] rounded-md px-1 ml-1">Q</span>uest</a>
                     </div>
                 </div>
