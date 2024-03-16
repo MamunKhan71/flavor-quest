@@ -5,7 +5,7 @@ import Recipes from './assets/components/Recipes'
 function App() {
   return (
     <>
-      <div className='max-w-[1320px]  mx-auto'>
+      <div className='container mx-auto'>
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <Recipes></Recipes>
