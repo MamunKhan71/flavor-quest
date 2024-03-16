@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 
 const Sidebar = ({ cookingList, setCookingList }) => {
+
     const [currentCook, setCurrentCook] = useState([])
     let index = 0;
     const currentlyCook = cookId => {

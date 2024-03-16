@@ -16,7 +16,6 @@ const Recipes = () => {
         }
     }
 
-
     const [recipes, setRecipe] = useState([]);
     useEffect(() => {
         fetch('recipe_data.json')
