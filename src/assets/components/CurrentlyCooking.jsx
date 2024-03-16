@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const CurrentlyCooking = ({ currentCook }) => {
     let index = 0;
     return (
@@ -24,8 +25,8 @@ const CurrentlyCooking = ({ currentCook }) => {
                                         <tr className="bg-[#28282808]">
                                             <th>{index = index + 1}</th>
                                             <td>{cooking.recipe_name}</td>
-                                            <td>{cooking.preparing_time}</td>
-                                            <td>{cooking.calories}</td>
+                                            <td>{cooking.preparing_time} minutes</td>
+                                            <td>{cooking.calories} calories</td>
                                         </tr>
                                     </>
                                 ))
@@ -50,4 +51,7 @@ const CurrentlyCooking = ({ currentCook }) => {
     );
 };
 
+CurrentlyCooking.propTypes = {
+    currentCook: PropTypes.array,
+}
 export default CurrentlyCooking;

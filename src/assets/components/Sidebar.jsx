@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CurrentlyCooking from "./CurrentlyCooking";
+import PropTypes from 'prop-types';
 
 
 const Sidebar = ({ cookingList, setCookingList }) => {
@@ -57,4 +58,8 @@ const Sidebar = ({ cookingList, setCookingList }) => {
     );
 };
 
+Sidebar.propTypes = {
+    cookingList : PropTypes.array,
+    setCookingList : PropTypes.func,
+}
 export default Sidebar;
