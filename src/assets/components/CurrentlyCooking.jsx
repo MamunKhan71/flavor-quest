@@ -2,9 +2,9 @@ const CurrentlyCooking = ({ currentCook }) => {
     let index = 0;
     return (
         <div className="w-full">
-            <div className="space-y-4 w-full px-12">
+            <div className="space-y-4 w-full">
                 <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Currently cooking: {currentCook.length > 0 && currentCook.length < 10 ? <>0{currentCook.length}</> : <>{currentCook.length}</>}</h1>
-                <hr className="w-full" />
+                <hr className="w-2/3 border mx-auto" />
             </div>
             <div>
                 <div className="overflow-x-auto fira">

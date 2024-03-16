@@ -13,9 +13,9 @@ const Sidebar = ({ cookingList, setCookingList }) => {
         <div className="mb-8">
             <div className="w-full lg:min-w-[500px] space-y-8 rounded-2xl border border-[#28282833] ">
                 <div>
-                    <div className="space-y-4 w-full mt-8 px-20">
+                    <div className="space-y-4 w-full mt-8">
                         <h1 className="text-center font-semibold lexend text-[#282828] text-2xl">Want to cook: {cookingList.length > 0 && cookingList.length < 10 ? <>0{cookingList.length}</> : <>{cookingList.length}</>}</h1>
-                        <hr className="w-full" />
+                        <hr className="w-2/3 border mx-auto" />
                     </div>
                     <div>
                         <div className="overflow-x-auto fira">
