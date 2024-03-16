@@ -37,7 +37,7 @@ const Sidebar = ({ cookingList, setCookingList }) => {
                                         cookingList.map(list => (
                                             <>
 
-                                                <tr className="bg-[#28282808]">
+                                                <tr className="bg-[#28282808]" key={list.recipe_id} >
                                                     <th>{index = index + 1}</th>
                                                     <td>{list.recipe_name}</td>
                                                     <td>{list.preparing_time}</td>

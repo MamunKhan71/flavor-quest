@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 const Recipe = ({ recipe, setCooking }) => {
-    const {recipe_image, short_description, recipe_name, recipe_id, ingredients, preparing_time, calories} = recipe
+    const {recipe_image, short_description, recipe_name, ingredients, preparing_time, calories} = recipe
     return (
             <div className="card bg-base-100 border border-[#28282833]">
                 <figure className="px-4 pt-4">
@@ -14,7 +14,7 @@ const Recipe = ({ recipe, setCooking }) => {
                         <p className="text-lg text-[#282828] lexend font-medium">Ingredients: <span>{ingredients.length}</span></p>
                         <ul className="list-disc list-inside text-[#878787] fira text-lg">
                             {
-                                ingredients.map(ingredient => <li key={recipe_id}>{ingredient}</li>)
+                                ingredients.map(ingredient => <li key={ingredient.recipe_id}>{ingredient}</li>)
                             }
                         </ul>
                         <hr className="w-full" />
