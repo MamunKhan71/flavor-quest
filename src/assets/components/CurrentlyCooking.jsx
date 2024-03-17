@@ -25,8 +25,8 @@ const CurrentlyCooking = ({ currentCook }) => {
                                         <tr className="bg-[#28282808]">
                                             <th>{index = index + 1}</th>
                                             <td>{cooking.recipe_name}</td>
-                                            <td>{cooking.preparing_time} minutes</td>
-                                            <td>{cooking.calories} calories</td>
+                                            <td>{cooking.preparing_time}</td>
+                                            <td>{cooking.calories}</td>
                                         </tr>
                                     </>
                                 ))
@@ -36,10 +36,10 @@ const CurrentlyCooking = ({ currentCook }) => {
                                     <th></th>
                                     <td></td>
                                     <td>Total Time = {
-                                        currentCook.reduce((acc, curr) => acc + parseInt(curr.preparing_time), 0)
+                                        currentCook.reduce((acc, curr) => acc + parseInt(String(curr.preparing_time).split(" ")[0]), 0)
                                     }<span> minutes</span></td>
                                     <td>Total Calories = {
-                                        currentCook.reduce((acc, curr) => acc + parseInt(curr.calories), 0)
+                                        currentCook.reduce((acc, curr) => acc + parseInt(String(curr.calories).split(" ")[0]), 0)
                                     }<span> calories</span></td>
                                 </tr></>
                             }

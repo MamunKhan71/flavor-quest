@@ -32,7 +32,7 @@ const Recipe = ({ recipe, setCooking }) => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span className="text-[#282828cc] text-base fira">{preparing_time} minutes</span>
+                                <span className="text-[#282828cc] text-base fira">{preparing_time}</span>
                             </div>
                             <div className="flex gap-2 items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -45,7 +45,7 @@ const Recipe = ({ recipe, setCooking }) => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span className="text-[#282828cc] text-base fira">{calories} calories</span>
+                                <span className="text-[#282828cc] text-base fira">{calories}</span>
                             </div>
                         </div>
                     </div>
