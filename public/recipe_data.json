@@ -2,7 +2,7 @@
     {
         "recipe_image": "1.jpg",
         "recipe_id": 1,
-        "recipe_name": "Spicy Chicken Stir-Fry",
+        "recipe_name": "Chicken Stir-Fry",
         "short_description": "A flavorful and quick stir-fry dish with tender chicken and fresh vegetables.",
         "ingredients": [
             "550 g chicken",
@@ -31,7 +31,7 @@
     {
         "recipe_image": "3.jpg",
         "recipe_id": 3,
-        "recipe_name": "Classic Beef Burger",
+        "recipe_name": "Beef Burger",
         "short_description": "Juicy beef patty topped with cheese, lettuce, tomato, and pickles.",
         "ingredients": [
             "250 g ground beef",
@@ -46,7 +46,7 @@
     {
         "recipe_image": "4.jpg",
         "recipe_id": 4,
-        "recipe_name": "Mediterranean Quinoa Salad",
+        "recipe_name": "Mediterranean Salad",
         "short_description": "A refreshing salad with quinoa, cucumbers, olives, and feta cheese.",
         "ingredients": [
             "1 cup quinoa",

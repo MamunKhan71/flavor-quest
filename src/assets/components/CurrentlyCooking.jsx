@@ -36,10 +36,10 @@ const CurrentlyCooking = ({ currentCook }) => {
                                     <th></th>
                                     <td></td>
                                     <td>Total Time = {
-                                        currentCook.reduce((acc, curr) => acc + parseInt(String(curr.preparing_time).split(" ")[0]), 0)
+                                        currentCook.reduce((acc, curr) => acc + parseInt((curr.preparing_time).split(" ")[0]), 0)
                                     }<span> minutes</span></td>
                                     <td>Total Calories = {
-                                        currentCook.reduce((acc, curr) => acc + parseInt(String(curr.calories).split(" ")[0]), 0)
+                                        currentCook.reduce((acc, curr) => acc + parseInt((curr.calories).split(" ")[0]), 0)
                                     }<span> calories</span></td>
                                 </tr></>
                             }
